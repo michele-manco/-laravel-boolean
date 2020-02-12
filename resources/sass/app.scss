@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
+body{
+  background-color: white;
+}
+.navbar{
+  height: 90px;
+}
+.logo img{
+  width: 200px;
+  height: 60px;
+  line-height: 90px;
+  }
+.nav-item a:hover{
+  cursor: pointer;
+  border-bottom: 2px solid #61cd4e;
+}
+.nav-item a {
+  font-size: 16px;
+  margin-right: 40px;
+  text-transform: uppercase;
+
+
+}
+#ser{
+  width: 200px;
+  background-color: #61cd4e;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
