@@ -49514,6 +49514,8 @@ $(document).ready(function () {
     if (!wrapper_faq.hasClass('open')) {
       $('.faq').removeClass('open');
       wrapper_faq.addClass('open');
+    } else {
+      wrapper_faq.removeClass('.open');
     }
   });
 });

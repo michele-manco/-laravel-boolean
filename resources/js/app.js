@@ -13,6 +13,8 @@ $(document).ready(function(){
         $('.faq').removeClass('open');
         wrapper_faq.addClass('open');
 
+    } else {
+      wrapper_faq.removeClass('.open');
     }
   });
 });
