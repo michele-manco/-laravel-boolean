@@ -12,6 +12,7 @@ $(document).ready(function(){
     if (!wrapper_faq.hasClass('open')) {
         $('.faq').removeClass('open');
         wrapper_faq.addClass('open');
+        wrapper_faq.find('.fa-plus').toggleClass('fa-plus fa-minus');
 
     } else {
       wrapper_faq.removeClass('.open');
