@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id="bg" class="navbar navbar-expand-lg fixed-top">
 
 
 
- <div class="container-fluid">
+ <div class="container-fluid ban">
   <div class="row">
       <div class="col-lg-5"></div>
       <a class="logo" href="{{route('homepage')}}">

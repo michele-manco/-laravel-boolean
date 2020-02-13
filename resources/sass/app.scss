@@ -9,8 +9,16 @@
 body{
   background-color: white;
 }
+#bg{
+  background-color: white;
+  // position: fixed;
+  // left: 0;
+  // right: 0;
+}
 .navbar{
   height: 90px;
+  background-color: white;
+
 }
 .logo img{
   width: 200px;
@@ -28,6 +36,12 @@ body{
 
 
 }
+.container-fluid{
+  // padding-top: 50px;
+}
+.ban{
+  // margin-top: 60px;
+}
 #ser{
   width: 200px;
   background-color: #61cd4e;
@@ -41,11 +55,13 @@ h1{
   margin-left: 80px;
   font-size: 44px;
   color: #1b3c59;
+  margin-top: 60px;
 }
 h2{
   font-size: 20px;
   color: #1b3c59;
   margin-left: 80px;
+  padding-bottom: 60px;
 
 }
 .faq:hover{

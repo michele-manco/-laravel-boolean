@@ -10888,8 +10888,13 @@ body {
   background-color: white;
 }
 
+#bg {
+  background-color: white;
+}
+
 .navbar {
   height: 90px;
+  background-color: white;
 }
 
 .logo img {
@@ -10923,12 +10928,14 @@ h1 {
   margin-left: 80px;
   font-size: 44px;
   color: #1b3c59;
+  margin-top: 60px;
 }
 
 h2 {
   font-size: 20px;
   color: #1b3c59;
   margin-left: 80px;
+  padding-bottom: 60px;
 }
 
 .faq:hover {

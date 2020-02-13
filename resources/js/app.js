@@ -11,11 +11,13 @@ $(document).ready(function(){
     var wrapper_faq = $(this).parent('.faq');
     if (!wrapper_faq.hasClass('open')) {
         $('.faq').removeClass('open');
+        $('.faq').find('.fa-plus').toggleClass('fa-plus fa-minus');
         wrapper_faq.addClass('open');
         wrapper_faq.find('.fa-plus').toggleClass('fa-plus fa-minus');
 
     } else {
-      wrapper_faq.removeClass('.open');
+      wrapper_faq.removeClass('open');
+      wrapper_faq.find('.fa-minus').toggleClass('fa-plus fa-minus');
     }
   });
 });
