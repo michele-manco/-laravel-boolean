@@ -6,9 +6,16 @@
 
 require('./bootstrap');
 var $ = require('jquery');
-// $(document).ready(function(){
-//   // alert('ciao');
-// });
+$(document).ready(function(){
+  $('.question').click(function(){
+    var wrapper_faq = $(this).parent('.faq');
+    if (!wrapper_faq.hasClass('open')) {
+        $('.faq').removeClass('open');
+        wrapper_faq.addClass('open');
+
+    }
+  });
+});
 
 window.Vue = require('vue');
 

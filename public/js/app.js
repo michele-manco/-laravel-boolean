@@ -49505,11 +49505,18 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); // $(document).ready(function(){
-//   // alert('ciao');
-// });
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
+$(document).ready(function () {
+  $('.question').click(function () {
+    var wrapper_faq = $(this).parent('.faq');
 
+    if (!wrapper_faq.hasClass('open')) {
+      $('.faq').removeClass('open');
+      wrapper_faq.addClass('open');
+    }
+  });
+});
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your

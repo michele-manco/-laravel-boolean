@@ -16,8 +16,17 @@ Route::get('/', function () {
     return view('home');
 })->name('homepage');
 Route::get('/faq', function () {
-    return view('faq');
+
+    $data = [
+      'lista_faq_sx' => config('dati.faqs_sx'),
+      'lista_faq_dx' => config('dati.faqs_dx')
+
+    ];
+    return view('faq', $data);
 })->name('pagina-faq');
+
+
+
 Route::get('/lezionegratis', function () {
     return view('lezionegratis');
 })->name('pagina-lezionegratis');
