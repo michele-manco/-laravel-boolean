@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     } else {
       wrapper_faq.removeClass('open');
-      wrapper_faq.find('.fa-minus').toggleClass('fa-plus fa-minus');
+      wrapper_faq.find('.fa-minus').toggleClass(' fa-minus fa-plus');
     }
   });
 });
