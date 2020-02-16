@@ -11,19 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    // return view('home')->with('name', 'mik');
-    return view('home');
-})->name('homepage');
-Route::get('/faq', function () {
+Route::get('/', 'HomeController@index')->name('homepage');
 
-    $data = [
-      'lista_faq_sx' => config('dati.faqs_sx'),
-      'lista_faq_dx' => config('dati.faqs_dx')
-
-    ];
-    return view('faq', $data);
-})->name('pagina-faq');
+Route::get('/faq', 'HomeController@faq')->name('pagina-faq');
 
 
 
