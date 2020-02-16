@@ -13,10 +13,10 @@
      <div class="col-lg-7">
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav mr-auto">
-           <li class="nav-item active">
+           <li class="nav-item {{ Route::currentRouteName() ==  'homepage' ? 'active' : ''}} ">
              <a class="nav-link" href="{{route('homepage')}}">Home <span class="sr-only">(current)</span></a>
            </li>
-           <li class="nav-item">
+           <li class="nav-item {{ Route::currentRouteName() ==  'pagina-faq' ? 'active' : ''}} ">
              <a class="nav-link" href="{{route('pagina-faq')}}">Faq</a>
            </li>
            <li class="nav-item dropdown">

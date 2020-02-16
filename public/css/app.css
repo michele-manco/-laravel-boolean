@@ -10908,6 +10908,10 @@ body {
   border-bottom: 2px solid #61cd4e;
 }
 
+.nav-item .active {
+  color: #61cd4e;
+}
+
 .nav-item a {
   font-size: 16px;
   margin-right: 40px;
